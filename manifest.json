@@ -1,0 +1,47 @@
+{
+    "manifest_version": 2,
+    "name": "Smart Calculator",
+    "version": "1.1.5",
+    "short_name": "Calculator",
+    "author": "Schmextensions",
+    "description": "an offline scientific calculator, press ❝Alt + C❞ (all keyboards) to open",
+    "offline_enabled": true,
+    "browser_action": {
+        "default_title": "Calculator",
+        "default_icon": {
+            "128": "images/128.png",
+            "96": "images/96.png",
+            "72": "images/72.png",
+            "64": "images/64.png",
+            "48": "images/48.png",
+            "32": "images/32.png",
+            "24": "images/24.png",
+            "16": "images/16.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+
+    "icons": {
+        "128": "images/128.png",
+        "96": "images/96.png",
+        "72": "images/72.png",
+        "64": "images/64.png",
+        "48": "images/48.png",
+        "32": "images/32.png",
+        "24": "images/24.png",
+        "16": "images/16.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Alt+C",
+                "windows": "Alt+C",
+                "mac": "Alt+C",
+                "chromeos": "Alt+C",
+                "linux": "Alt+C"
+            }
+        }
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com; object-src 'self'"
+}
